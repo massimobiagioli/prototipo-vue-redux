@@ -15,13 +15,13 @@ new Vue({
   },
   methods: {
     handleIncrement () {
-      store.dispatch(actions.increment())
+      store.dispatch(actions.counter.increment())
     },
     handleDecrement () {
-      store.dispatch(actions.decrement())
+      store.dispatch(actions.counter.decrement())
     },
     scan () {
-      store.dispatch(actions.scan())
+      store.dispatch(actions.machine.scan())
     }
   }
 })

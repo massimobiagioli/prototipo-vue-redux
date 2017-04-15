@@ -4,14 +4,7 @@ export const RETRIEVE_IP = 'RETRIEVE_IP'
 export const RETRIEVE_IP_SUCCESS = 'RETRIEVE_IP_SUCCESS'
 export const RETRIEVE_IP_FAILURE = 'RETRIEVE_IP_FAILURE'
 
-// action creators
-const actions = {
-  increment () {
-    return {type: 'INCREMENT'}
-  },
-  decrement () {
-    return {type: 'DECREMENT'}
-  },
+const machineActions = {
   scan () {
     return {
       [CALL_API]: {
@@ -23,4 +16,4 @@ const actions = {
   }
 }
 
-export default actions
+export default machineActions
