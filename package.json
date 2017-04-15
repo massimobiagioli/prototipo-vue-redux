@@ -16,6 +16,7 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "redux": "^3.6.0",
+    "redux-logger": "^3.0.1",
     "revue": "^3.0.0",
     "vue": "^2.2.2",
     "vue-router": "^2.3.0"

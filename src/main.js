@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Revue from 'revue'
-import {createStore, combineReducers} from 'redux'
+import {createStore, combineReducers, applyMiddleware} from 'redux'
+import logger from 'redux-logger'
 
 // create a counter reducer
 const counter = (state = 0, action) => {
@@ -26,7 +27,10 @@ const actions = {
 
 // combine reducers
 // and create the redux store
-const reduxStore = createStore(combineReducers({counter}))
+const reduxStore = createStore(
+  combineReducers({counter}),
+  applyMiddleware(logger)
+)
 
 // create a revue store by binding redux store to Vue
 const store = new Revue(Vue, reduxStore, actions)
