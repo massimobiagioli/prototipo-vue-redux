@@ -32,7 +32,17 @@
         </div><!-- /.container-fluid -->
       </nav>
 
+      <!-- Machine -->
+      <h3>Machine State</h3>
+      <div style="margin-left: 10px;">
+        <div>
+          <span>IP Address: </span><span>{{machine.machineStatus.ip}}</span>
+        </div>
+        <button @click="scan">Scan</button>
+      </div>
+
       <!-- Counter -->
+      <h3>Counter</h3>
       <div style="margin-left: 10px;">
         <span>{{count}}</span>
         <button @click="handleIncrement">+</button>

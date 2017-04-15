@@ -9,7 +9,8 @@ new Vue({
   el: '#app',
   data () {
     return {
-      count: this.$select('counter as count')
+      count: this.$select('counter as count'),
+      machine: this.$select('machine as machine')
     }
   },
   methods: {
@@ -18,6 +19,9 @@ new Vue({
     },
     handleDecrement () {
       store.dispatch(actions.decrement())
+    },
+    scan () {
+      store.dispatch(actions.scan())
     }
   }
 })
