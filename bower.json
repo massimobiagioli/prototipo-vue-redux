@@ -1,0 +1,20 @@
+{
+  "name": "prototipo-vue-redux",
+  "description": "A Vue.js project",
+  "main": "",
+  "authors": [
+    "Massimo Biagioli <m.biagioli@palinformatica.it>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/massimobiagioli/prototipo-vue-redux",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
