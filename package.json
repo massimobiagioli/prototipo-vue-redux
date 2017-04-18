@@ -21,7 +21,7 @@
     "redux-logger": "^3.0.1",
     "revue": "^3.0.0",
     "vue": "^2.2.2",
-    "vue-router": "^2.3.0"
+    "vue-router": "^2.4.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.2",
